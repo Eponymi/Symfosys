@@ -24,6 +24,7 @@ where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/ro
   - Configure
     1. Configure package settings in `roles/app.json` (defaults to 
     symfony/framework-standard-edition and 2.2.x-dev respectively).
+    
     ```json
     ...
     "symfony2": {
@@ -33,6 +34,7 @@ where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/ro
       }
     }
     ```
+    
     2. Configure project variables like the IP of your Virtual Machine (see `Projectvars`)
    - run `bundle` to install required `gem`s
    - run `vagrant up dev` to launch your development machine

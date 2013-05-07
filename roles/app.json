@@ -1,38 +1,22 @@
 {
-  "name": "dev",
+  "name": "app",
   "chef_type": "role",
   "json_class": "Chef::Role",
-  "description": "Get a Symfony2 app running on a single virtual machine",
+  "description": "Any server which will run the Symfony2 Application",
   "default_attributes": {
     "user":{
       "name": "vagrant"
     },
-    "apache": {
-      "default_site_enabled": false
-    },
     "symfony2": {
-    	"mysql": {
-  			"db_password": "thisisnotasecretandshouldbechanged"
-  		}
-  	},
-    "php": {
-    	"ini_settings": {
-    		"short_open_tag": "Off",
-    		"magic_quotes_gpc": "Off",
-    		"register_globals": "Off",
-    		"session.autostart": "Off",
-    		"date.timezone": "America/New_York"
-    	}
-    },
-    "jolicode-php": {
-    	"config": {
-    		"date.timezone": "America/New_York"
-    	}
-    }
+        "composer": {
+            "package_name": "symfony/framework-standard-edition",
+            "package_version": "2.2.x-dev"
+        }
+  	}
   },
   "run_list": [
     "role[base]",
-    "role[app]"
+    "recipe[symfony2]"
   ],
   "intended_run_list": [
   	"recipe[apt]",

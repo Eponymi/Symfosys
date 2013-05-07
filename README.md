@@ -8,22 +8,29 @@ followed `vagrant up` and watch things go.
 The project is in its infancy, and contributors are welcome. Check the Road Map to see 
 where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/roadmap.md
 
-**Requirements**
+Requirements
+------------
   - Vagrant http://www.vagrantup.com
   - Rubygems
   - `bundler` gem
   - **TO-DO:** automate installation of dependencies; add Boxen support. 
 
-**Installation**
-  - *Github* `git clone https://github.com/Eponymi/Symfosys.git`
-  - *Composer* TO-DO
-  - *Rubygem* TO-DO
+Installation
+------------
+  **Github**
+  `git clone https://github.com/Eponymi/Symfosys.git`
+  **Composer**
+  TO-DO
+  **Rubygem**
+  TO-DO
   
-**Usage**
-  - Install Symfosys and its requirements (see above).
-  - Configure
-    1. Configure package settings in `roles/app.json` (defaults to 
-    symfony/framework-standard-edition and 2.2.x-dev respectively).
+Usage
+-----
+  **Install Symfosys and its requirements** (see above).
+  
+  **Configure**
+  1. Configure package settings in `roles/app.json` (defaults to 
+  symfony/framework-standard-edition and 2.2.x-dev respectively).
     
     ```json
     {
@@ -37,6 +44,10 @@ where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/ro
     }
     ```
     
-    2. Configure project variables like the IP of your Virtual Machine (see `Projectvars`)
-   - run `bundle` to install required `gem`s
-   - run `vagrant up dev` to launch your development machine
+   2. Configure project variables like the IP of your Virtual Machine (see `Projectvars`)
+   
+   **Install required gems**
+   `$ bundle`
+   
+   **Launch your dev machine**
+   `$ vagrant up dev`

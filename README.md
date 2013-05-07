@@ -26,11 +26,13 @@ where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/ro
     symfony/framework-standard-edition and 2.2.x-dev respectively).
     
     ```json
+    {
     ...
-    "symfony2": {
-      "composer": {
-        "package_name": "sylius/sylius",
-        "package_version": "*"
+      "symfony2": {
+        "composer": {
+          "package_name": "sylius/sylius",
+          "package_version": "*"
+        }
       }
     }
     ```

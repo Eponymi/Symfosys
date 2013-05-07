@@ -12,7 +12,6 @@ where the plan is headed. https://github.com/Eponymi/Symfosys/tree/master/doc/ro
   - Vagrant http://www.vagrantup.com
   - Rubygems
   - `bundler` gem
-  - Chef http://www.opscode.com
   - **TO-DO:** automate installation of dependencies; add Boxen support. 
 
 **Installation**
